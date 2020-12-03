@@ -1,0 +1,27 @@
+@import "../../../Partials/variables";
+@import "../../../Partials/mixins";
+
+.Header {
+    background-color: $color-primary;
+    text-align: center;
+    font-family: "Gochi Hand", cursive;
+    letter-spacing: 0.2rem;
+
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+        fill: white;
+        height: 5rem;
+        width: 5rem;
+
+        margin: 0 2rem;
+
+        @include mediaQuery(600px) {
+            margin: 0;
+        }
+    }
+}

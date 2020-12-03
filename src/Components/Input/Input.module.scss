@@ -1,3 +1,10 @@
+@import "../../Partials/variables";
+
+form {
+    display: flex;
+    align-items: center;
+}
+
 Input {
     height: 3rem;
     border: 0.1rem solid black;
@@ -6,6 +13,15 @@ Input {
 }
 
 .SubmitButton {
-    background-color: rgb(144, 144, 172);
+    background-color: $color-primary-2;
+    color: white;
+
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+
     border: none;
+    border-radius: 2rem;
+
+    padding: 0.8rem 2rem;
+    margin-left: 1rem;
 }

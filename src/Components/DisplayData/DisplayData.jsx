@@ -4,7 +4,11 @@ import styles from "./DisplayData.module.scss";
 const DisplayData = (props) => {
     const data = props.data
         ? props.data.map((el, i) => {
-              return <li key={el + i}>{el}</li>;
+              return (
+                  <li key={el + i} className={styles.Data_section_list_item}>
+                      {el}
+                  </li>
+              );
           })
         : null;
 
