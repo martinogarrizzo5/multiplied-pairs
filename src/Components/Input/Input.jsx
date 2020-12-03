@@ -54,7 +54,10 @@ const Input = (props) => {
     // prevent + - e value input
     const preventUnexpectedKeys = (evt) => {
         if (
-            (evt.which !== 8 && evt.which !== 0 && evt.which < 48) ||
+            (evt.which !== 8 &&
+                evt.which !== 13 &&
+                evt.which !== 0 &&
+                evt.which < 48) ||
             evt.which > 57
         ) {
             evt.preventDefault();
@@ -74,13 +77,14 @@ const Input = (props) => {
                 className={styles.Input}
                 autoFocus
             />
-            <a
+            <button
+                type="submit"
                 className={styles.SubmitButton}
                 onClick={handleAlgorithm}
                 href="/"
             >
                 Find
-            </a>
+            </button>
         </form>
     );
 };
