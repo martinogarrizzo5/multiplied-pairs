@@ -20,8 +20,16 @@ Input {
     text-decoration: none;
 
     border: none;
+    outline: none;
     border-radius: 2rem;
 
     padding: 0.8rem 2rem;
     margin-left: 1rem;
+
+    transition: all 0.2s;
+
+    &:active {
+        background-color: $color-primary-dark;
+        transform: scale(1.1);
+    }
 }

@@ -75,6 +75,7 @@ const Input = (props) => {
                 onKeyPress={preventUnexpectedKeys}
                 value={actualNumber}
                 className={styles.Input}
+                placeholder="Write a natural number"
                 autoFocus
             />
             <button
